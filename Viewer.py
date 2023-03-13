@@ -5,19 +5,19 @@ def view(grid):
         for j in range(len(grid[i])):
 
             if grid[i][j] == maze.EMPTY:
-                print(" ", end="")
+                print("-- ", end="")
 
             elif grid[i][j] == maze.WALL:
-                print("##", end="")
+                print("||", end="")
 
             elif grid[i][j] == maze.START:
-                print("^^", end="")
+                print("00", end="")
 
             elif grid[i][j] == maze.END:
-                print("$$", end="")
+                print("__", end="")
 
             elif griiid[i][j] == maze.VISITED:
-                print("..", end="")
+                print("!!", end="")
 
             else:
                 raise AssertionError
